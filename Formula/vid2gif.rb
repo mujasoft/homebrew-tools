@@ -8,7 +8,7 @@ class Vid2gif < Formula
   depends_on "ffmpeg"
 
   def install
-    bin.install "vid2gif.sh" => "vid2gif"
+    bin.install "vid2gif" => "vid2gif"
   end
 
   test do
