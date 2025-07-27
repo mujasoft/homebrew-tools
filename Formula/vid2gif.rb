@@ -1,17 +1,17 @@
 class Vid2gif < Formula
-  desc "Convert videos to optimized GIFs using ffmpeg"
+  desc "Convert video files into optimized GIFs using ffmpeg"
   homepage "https://github.com/mujasoft/vid2gif"
-  url "https://github.com/mujasoft/vid2gif/archive/refs/tags/v1.0.1.tar.gz"
-  sha256 "b48f6b71f1b8d698e25998dd8c5df8af093d63c2e067c4d1ccd9e360156a75da"
+  url "https://github.com/mujasoft/vid2gif/archive/v1.0.2.tar.gz"
+  sha256 "7d420ff4777fdaadc695700be56c8554ef5b6311b5da7d5251867684644804e0"
   license "MIT"
 
   depends_on "ffmpeg"
 
   def install
-    bin.install "vid2gif" => "vid2gif"
+    bin.install "vid2gif"
   end
 
   test do
-    system "#{bin}/vid2gif", "--help"
+    system "#{bin}/vid2gif", "-h"
   end
 end
