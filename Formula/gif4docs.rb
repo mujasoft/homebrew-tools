@@ -1,4 +1,4 @@
-class Gif4Docs < Formula
+class Gif4docs < Formula
   desc "Convert video files into optimized GIFs using FFmpeg"
   homepage "https://github.com/mujasoft/gif4docs"
   url "https://github.com/mujasoft/gif4docs/archive/refs/tags/v1.0.4.tar.gz"
